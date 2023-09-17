@@ -1,0 +1,140 @@
+*{
+ margin :0;
+ padding :0;
+ box-sizing : border-box;
+ list-style-type: none;
+ }
+
+body{
+ width:100%;
+ height:100vh;
+ overflow-x:hidden;
+ background-color: rgb(17, 16, 17);
+ color: white;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+
+::selection{
+   background-color: #00ff9d;
+   color: black;
+}
+
+.container{
+    /* background-color: pink; */
+    width: 100%;
+    height: 100vh;
+}
+
+.display{
+    /* background-color: red; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.showing{
+margin-bottom: 20px;
+background-color: rgba(255, 31, 31, 0);
+/* background-color: pink; */
+color: white;
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 28px;
+text-align: right;
+width: 100%;
+border: none;
+outline: none;
+padding-right: 7px;
+}
+
+.showing.small_sizing{
+    font-size: 20px;
+    color: gray;
+}
+
+
+.eval_showing{
+    /* background-color: red; */
+    width: 100%;
+    text-align: right;
+    font-size:40px;
+    text-transform: uppercase;
+    color: white;
+    padding-right: 10px;
+    display: none;
+}
+
+.eval_showing.toggle{
+    border: none;
+    outline: none;
+    display: block;
+    background-color: transparent;
+}
+
+.keys{
+    border-top:0.5px solid rgba(255, 255, 255, 0.291) ;
+    /* background-color: darkgreen; */
+    width: 100%;
+    height: 70%;
+}
+
+
+.cal_table{
+    /* background-color: fuchsia; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.cal_table tr td{
+    text-transform: uppercase;
+    font-size: 18px;
+    /* background-color: red; */
+}
+
+.cal{
+    background-color: #00ff9d3c;
+ transition: 0.4s;
+}
+
+.cal:hover{
+    background-color:#00ff9d ;
+}
+
+
+
+.cal i{
+    font-size: 24px;
+}
+
+
+.cal_table tr td button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:white;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.number{
+    transition: 0.4s;
+}
+.number:hover{
+background-color: rgba(35, 35, 35, 0.531);
+}
+
+.del{
+    transition: 0.4s;
+}
+
+.del:hover {
+    background-color: rgb(40, 40, 40);
+}

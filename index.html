@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="display">
+        <input type="text" class="eval_showing " >
+        <input type="text" name="number_showing" class="showing "  disabled>
+    </div>
+    <div class="keys">
+        <table class="cal_table" >
+            <tr>
+                <td value="" onclick="cls()" ><button>ac</button></td>
+                <td  value="%" onclick="addop('%')" ><button><i class="fa-solid fa-divide" style="color: #00ff9d;"></i>  </button>   </td>
+                <td  value="+" onclick="addop('+')"  ><button><i class="fa-solid fa-plus" style="color: #00ff9d;"></i>  </button>     </td>
+                <td class="del"  value="" onclick="del()" > <button> <i class="fa-solid fa-delete-left" style="color: #00ff9d;"></i></button></td>
+             
+            </tr>
+            <tr>
+                <td class="number" value="1" onclick="addNumber(1)" ><button>1</button></td>
+                <td class="number"  value="2" onclick="addNumber(2)" ><button>2</button></td>
+                <td class="number" value="3" onclick="addNumber(3)"  ><button>3</button></td>
+                <td value="/" onclick="addop('/')"  ><button><i class="fa-solid fa-divide" style="color: #ff00e6;"></i></button></td  >
+            </tr>
+            <tr>
+                <td class="number"  value="4" onclick="addNumber(4)"><button>4</button></td>
+                <td class="number"  value="5" onclick="addNumber(5)"><button>5</button></td>
+                <td class="number"  value="6" onclick="addNumber(6)"><button>6</button></td>
+                <td value="-" onclick="addop('-')" ><button><i class="fa-solid fa-subtract" style="color: #ff00e6;"></i></button></td  >
+            </tr>
+            <tr>
+                <td class="number" value="7" onclick="addNumber(7)"  ><button>7</button></td>
+                <td class="number" value="8" onclick="addNumber(8)"  ><button>8</button></td>
+                <td class="number" value="9" onclick="addNumber(8)"  ><button>9</button></td>
+                <td value="*" onclick="addop('*')" ><button  ><i class="fa-solid fa-multiply" style="color: #ff00e6;"></i></button></td >
+            </tr>
+            <tr>
+                <td class="number"value="0" onclick="addNumber(0)" ><button>0</button></td>
+                <td class="number" value="." onclick="dot('.')"  ><button>.</button></td>
+                <td  class="cal" colspan="2"  value="" onclick="eva()" > <button ><i class="fa-solid fa-equals" style="color: #ffffff;"></i></button> </td>
+            </tr>
+        </table>
+        
+    </div>
+  </div>
+</body>
+<script src="cal.js"></script>
+</html>
